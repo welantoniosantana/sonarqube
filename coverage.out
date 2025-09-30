@@ -1,5 +1,5 @@
 mode: set
-sonarqube/sum.go:5.13,10.2 4 0
+sonarqube/sum.go:5.13,10.2 1 0
 sonarqube/sum.go:12.24,14.2 1 1
 sonarqube/sum.go:16.24,18.2 1 1
 sonarqube/sum.go:20.26,22.2 1 1
