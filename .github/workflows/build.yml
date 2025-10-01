@@ -18,10 +18,10 @@ jobs:
         with:
           go-version: '1.24.6'
       - run: go test -coverprofile=coverage.out
-      - uses: SonarSource/sonarqube-scan-action@v5
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v6
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
       # If you wish to fail your job when the Quality Gate is red, uncomment the
       # following lines. This would typically be used to fail a deployment.
       # - uses: SonarSource/sonarqube-quality-gate-action@v1
