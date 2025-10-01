@@ -43,3 +43,7 @@ func TestSumX(t *testing.T) {
 		t.Errorf("SumX(%d, %d) = %d; want %d", a, b, result, expected)
 	}
 }
+
+func TestMain(t *testing.T) {
+	main()
+}
